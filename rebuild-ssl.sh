@@ -11,7 +11,7 @@ then
   curl -O "https://www.openssl.org/source/openssl-$VERSION.tar.gz"
 fi
 
-### Extract source (twice)
+### Extract source
 
 rm -rf "openssl-$VERSION"
 tar -xvf "openssl-$VERSION.tar.gz"
