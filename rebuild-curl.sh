@@ -46,7 +46,7 @@ pushd "curl-$VERSION"
   --disable-manual \
   --disable-sspi \
   --with-ssl="`pwd`/../libssl" --without-libssh2
-make -j4
+make -j
 make install
 rm -rf "$DESTINATION/bin" "$DESTINATION/share" "$DESTINATION/lib/libcurl.la" "$DESTINATION/lib/pkgconfig"
 popd

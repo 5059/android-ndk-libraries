@@ -33,7 +33,7 @@ popd
 
 pushd "icu~/source"
 ./configure --disable-icuio --disable-layout --disable-tests --disable-samples
-make -j4
+make -j
 popd
 
 ### Build and install
@@ -49,7 +49,7 @@ export CPPFLAGS="-DUCONFIG_NO_LEGACY_CONVERSION=1 -DU_CHARSET_IS_UTF8=1 -DUCONFI
 
 pushd "icu/source"
 ./configure --prefix="$DESTINATION" --host="$HOST" --enable-static --disable-shared --disable-dyload --disable-renaming --disable-icuio --disable-layout --disable-tests --disable-samples --disable-tools --with-cross-build="`pwd`/../../icu~/source"
-make -j4
+make -j
 make install
 rm -rf "$DESTINATION/lib/icu" "$DESTINATION/lib/pkgconfig" "$DESTINATION/bin" "$DESTINATION/sbin" "$DESTINATION/share"
 popd

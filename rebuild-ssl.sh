@@ -24,7 +24,7 @@ source "common.sh"
 
 pushd "openssl-$VERSION"
 ./Configure android-armv7 --prefix="$DESTINATION"
-make -j4
+make -j
 make install_sw
 rm -rf "$DESTINATION/bin" "$DESTINATION/ssl" "$DESTINATION/lib/engines" "$DESTINATION/lib/pkgconfig"
 rm -f "$DESTINATION/libcrypto.so" "$DESTINATION/libcrypto.so.1.0.0" "$DESTINATION/libssl.so" "$DESTINATION/libssl.so.1.0.0"
