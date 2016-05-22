@@ -14,8 +14,9 @@ Build script to build OpenSSL and cURL using the Android NDK.
 Build Environment
 =================
 
-* OS X 10.10.x
-* NDK r10e
+* OS X
+* Android Studio 2.x with NDK support
+* NDK ~~r10e~~ r11
 * Android API level 18
 
 Using the Libraries
