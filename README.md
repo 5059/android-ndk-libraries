@@ -6,10 +6,7 @@ This repository contains various open source libraries precompiled as static lib
 * [libcurl](http://curl.haxx.se/libcurl/) (with HTTP and HTTPS protocols)
 * [libssl](https://www.openssl.org/)
 * [libicu](http://site.icu-project.org/) (with legacy conversion turned off)
-
-# curl-android-ndk
-
-Build script to build OpenSSL and cURL using the Android NDK.
+* [libmbedtls](https://tls.mbed.org/)
 
 Build Environment
 =================
@@ -22,4 +19,4 @@ Build Environment
 Using the Libraries
 ===================
 
-To make HTTPS certificate verification work, see http://stackoverflow.com/a/31521185/463432.
+To make HTTPS certificate verification work with curl, see http://stackoverflow.com/a/31521185/463432.
